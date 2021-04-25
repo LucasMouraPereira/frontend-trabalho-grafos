@@ -13,5 +13,6 @@
   "prettier.disableLanguages": ["js"],
   "window.zoomLevel": 5,
   "editor.fontSize": 12,
-  "terminal.integrated.fontSize": 16
+  "terminal.integrated.fontSize": 16,
+  "editor.tabSize": 2,
 }

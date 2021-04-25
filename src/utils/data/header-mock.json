@@ -1,0 +1,23 @@
+{
+  "header": {
+    "icon": "/images/global/png/Icon.png",
+    "title": "Story Games",
+    "pages": [
+      {
+        "name": "Home",
+        "link": "/"
+      },
+      {
+        "name": "Store",
+        "link": "/loja"
+      }
+    ],
+    "cart": {
+      "initialState": 0
+    },
+    "button": {
+      "name": "Sign in",
+      "state": false
+    }
+  }
+}

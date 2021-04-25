@@ -1,7 +1,7 @@
 import React from "react";
 // import PropTypes from "prop-types";
 
-const Home = () => (
+const Store = () => (
     <div>Lucas</div>
 );
 
@@ -9,4 +9,4 @@ const Home = () => (
 //     test: PropTypes.string.isRequired,
 // }
 
-export default Home;
+export default Store;

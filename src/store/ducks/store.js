@@ -8,24 +8,24 @@ const INITIAL_STATE = {
 };
 
 export const { Creators, Types } = createActions({
-    requestHome: ["home"],
-    requestHomeSuccess: ["data"],
-    requestHomeFail: ["error"],
+    requestStore: ["store"],
+    requestStoreSuccess: ["data"],
+    requestStoreFail: ["error"],
 });
 
-const requestHome = (state) => ({
+const requestStore = (state) => ({
     ...state,
     isLoading: true,
   });
   
-  const requestHomeSuccess = (state, data) => ({
+  const requestStoreSuccess = (state, data) => ({
     ...state,
     header: data.header,
     footer: data.footer,
     isLoading: false,
   });
   
-  const requestHomeFail = (state, error) => ({
+  const requestStoreFail = (state, error) => ({
     ...state,
     error,
     isLoading: false,
@@ -38,9 +38,9 @@ const requestHome = (state) => ({
   });
   
   export default createReducer(INITIAL_STATE, {
-    [Types.REQUEST_HOME]: requestHome,
-    [Types.REQUEST_HOME_SUCCESS]: requestHomeSuccess,
-    [Types.REQUEST_HOME_FAIL]: requestHomeFail,
+    [Types.REQUEST_STORE]: requestStore,
+    [Types.REQUEST_STORE_SUCCESS]: requestStoreSuccess,
+    [Types.REQUEST_STORE_FAIL]: requestStoreFail,
     [HYDRATE]: hydrate,
   });
   
