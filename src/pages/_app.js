@@ -8,11 +8,11 @@ import Footer from "components/core/Footer";
 const App = ({ Component, pageProps }) => (
   <>
     <GlobalStyle />
-    <Header headerSection={pageProps.header} />
+    <Header url={pageProps.header} />
     <Layout>
       <Component {...pageProps} />
     </Layout>
-    <Footer footerSection={pageProps.footer} />
+    <Footer />
   </>
 );
 

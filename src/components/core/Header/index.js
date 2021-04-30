@@ -1,55 +1,42 @@
-import React from "react";
+import React, { memo } from "react";
 import PropTypes from "prop-types";
+import { header } from "utils/data/header-mock.json";
 
 import Link from "next/link";
 import { HOME } from "utils/constants/urls";
-import Router from "next/router";
+// import Router from "next/router";
 
 import Logo from "components/core/Logo";
-import DesktopHeader from "./DesktopHeader";
-import Search from "./Search";
+import Menu from "./Menu";
+// import Search from "./Search";
 
 
 import * as S from "./styled";
 
-const Header = ({ headerSection }) => {
-  const handleSubmitInput = (event, params) => {
-    event.preventDefault();
-    Router.push(`/busca?q=${params}`);
-  };
-  return (
-    <S.HeaderContainer>
-      <S.WrapperMenu>
-        <Link href={HOME} as={HOME} passHref>
-          <Logo color="#FAFAFA" icon={headerSection.icon} title={headerSection.title} />
-        </Link>
-        <DesktopHeader menu={headerSection.pages} />
-        <S.SearchBar>
-          <Search handleSubmit={handleSubmitInput} />
-        </S.SearchBar>
-      </S.WrapperMenu>
-    </S.HeaderContainer>
-  )
-};
+const Header = ({ url }) => (
+  <S.HeaderContainer>
+    <Link href={HOME} as={HOME} passHref>
+      <a>
+        <Logo color="#FAFAFA" icon={header.icon} title={header.title} />
+      </a>
+    </Link>
+    <Menu menu={header.pages} url={url} />
+  </S.HeaderContainer>
+  // <S.HeaderContainer>
+  //   <S.WrapperMenu>
+  //     <Link href={HOME} as={HOME} passHref>
+  //       <Logo color="#FAFAFA" icon={header.icon} title={header.title} />
+  //     </Link>
+  //     <DesktopHeader menu={header.pages} />
+  //   </S.WrapperMenu>
+  //   <S.SearchBar>
+  //     <Search handleSubmit={handleSubmitInput} />
+  //   </S.SearchBar>
+  // </S.HeaderContainer>
+);
 
 Header.propTypes = {
-  headerSection: PropTypes.shape({
-    icon: PropTypes.string,
-    title: PropTypes.string,
-    pages: PropTypes.arrayOf(
-      PropTypes.shape({
-        name: PropTypes.string,
-        link: PropTypes.string,
-      }),
-    ),
-    cart: PropTypes.shape({
-      initialState: PropTypes.number,
-    }),
-    button: PropTypes.shape({
-      name: PropTypes.string,
-      state: PropTypes.bool,
-    }),
-  }).isRequired,
+  url: PropTypes.string.isRequired,
 };
 
-export default Header;
+export default memo(Header);

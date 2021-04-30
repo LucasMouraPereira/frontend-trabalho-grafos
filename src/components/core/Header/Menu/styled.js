@@ -3,12 +3,14 @@ import sizes from "utils/style/breakpoints";
 
 export const Container = styled.div`
   width: 100%;
+  max-width: 160px;
   height: 100%;
   color: var(--color-white-2);
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.12);
   z-index: 99;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   margin: 0 40px;
   @media (max-width: ${sizes.md}) {
@@ -17,7 +19,7 @@ export const Container = styled.div`
 `;
 
 export const WrapperMenu = styled.div`
-  display: ${({ isActive }) => isActive === "Home"}
+  cursor: pointer;
   span {
     font-weight: bold;
     font-size: 16px;
@@ -29,11 +31,5 @@ export const WrapperMenu = styled.div`
 `;
 
 export const SelectLink = styled.div`
-  &:first-child {
-    border: ${({ isActive }) => isActive === "Home" ? "3px solid var(--color-pink-1)" : "none"};
-  }
-
-  &:last-child {
-    border: ${({ isActive }) => isActive === "Store" ? "none": "3px solid var(--color-pink-1)"};
-  }
+  border: ${({ isActive }) => isActive ? "3px solid var(--color-pink-1)" : "none"};
 `;

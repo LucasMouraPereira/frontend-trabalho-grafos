@@ -1,10 +1,10 @@
-import React from "react";
+import React, { memo } from "react";
 import PropTypes from "prop-types";
 import Image from "next/image";
 
 import * as S from "./styled";
 
-const Footer = ({ icon, title, color, style }) => (
+const Logo = ({ icon, title, color, style }) => (
   <S.WrapperLogo color={color} style={style}>
     <Image 
       src={icon} 
@@ -16,15 +16,15 @@ const Footer = ({ icon, title, color, style }) => (
   </S.WrapperLogo>
 );
 
-Footer.propTypes = {
+Logo.propTypes = {
     icon: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     color: PropTypes.string.isRequired,
     style: PropTypes.object
 };
 
-Footer.defaultProps ={
+Logo.defaultProps ={
   style: {},
 };
 
-export default Footer;
+export default memo(Logo);

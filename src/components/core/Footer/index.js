@@ -1,20 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Logo from "components/core/Logo";
-
+import { footer } from "utils/data/footer-mock.json";
 import * as S from "./styled";
 
-const Footer = ({ footerSection }) => (
+const Footer = () => (
   <S.FooterWrapper>
     <S.ConteinerLogo>
       <Logo 
         color="#242424" 
-        icon={footerSection.icon} 
-        title={footerSection.title} 
+        icon={footer.icon} 
+        title={footer.title} 
       />
     </S.ConteinerLogo>
     <S.WrapperSection>
-      {footerSection.section.map(({ title, info }, index) => (
+      {footer.section.map(({ title, info }, index) => (
         <S.WrapperInformation key={index}>
           <h3>{title}</h3>
           <S.Content />
@@ -30,12 +30,12 @@ const Footer = ({ footerSection }) => (
         </S.WrapperInformation>
       ))}
     </S.WrapperSection>
-    <S.Phrase>{footerSection.pharse}</S.Phrase>
+    <S.Phrase>{footer.pharse}</S.Phrase>
   </S.FooterWrapper>
 );
 
 Footer.propTypes = {
-  footerSection: PropTypes.shape({
+  footer: PropTypes.shape({
     icon: PropTypes.string,
     title: PropTypes.string,
     section: PropTypes.arrayOf(
