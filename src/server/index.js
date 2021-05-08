@@ -19,15 +19,15 @@ app.prepare().then(() => {
   server.get("*", handler);
 
   // server
-  server.listen(process.env.PORT);
+  server.listen(process.env.PORT || 3000);
 
   if (dev) {
     console.info(
       `ecommerce is running at: ${chalk.underline(
-        `http://localhost:${process.env.PORT}`,
+        `http://localhost:${process.env.PORT || 3000}`,
       )}`,
     );
   } else {
-    console.info(`ecommerce executando na porta ${process.env.PORT}`);
+    console.info(`ecommerce executando na porta ${process.env.PORT || 3000}`);
   }
 });
