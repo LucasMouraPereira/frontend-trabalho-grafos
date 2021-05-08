@@ -6,7 +6,7 @@ const path = require("path");
 const plugins = [[withFonts], [withImages]];
 const nextConfiguration = {
   useFileSystemPublicRoutes: false,
-  exclude: path.resolve(__dirname, "src/static/images/svg"),
+  exclude: path.resolve(__dirname, "src/utils/static/svg"),
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,

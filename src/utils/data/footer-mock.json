@@ -1,0 +1,72 @@
+{
+  "footer": {
+    "icon": "/images/global/png/Icon.png",
+    "title": "Story Games",
+    "section": [
+      {
+        "title": "contact",
+        "info": [
+          {
+            "text": "suporte@storygames.com"
+          }, 
+          {
+            "text":"+55 21 33283719"
+          }
+        ]
+      },
+      {
+        "title": "follow us",
+        "info": [
+          {
+            "text": "Instagram",
+            "link": "./"
+          },
+          {
+            "text": "Twitter",
+            "link": "./"
+          },
+          {
+            "text": "YouTube",
+            "link": "./"
+          },
+          {
+            "text": "Facebook",
+            "link": "./"
+          }
+        ]
+      },
+      {
+        "title": "links",
+        "info": [
+          {
+            "text": "Home",
+            "link": "./"
+          },
+          {
+            "text": "Store",
+            "link": "./loja"
+          },
+          {
+            "text": "Discover",
+            "link": "./"
+          }
+        ]
+      },
+      {
+        "title": "Location",
+        "info":[
+          {
+            "text": "Rua 7 de Maio"
+          },
+          {
+            "text": "527  - 89020330"
+          },
+          {
+            "text": "Rio de Janeiro, Brasil"
+          }
+        ]
+      }
+    ],
+    "pharse": "Story Games 20201 © Todos os Direitos Reservados"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "name": "Lucas Moura Pereira",
+      "email": "lucasmourap@gmail.com",
+      "password": "123456",
+      "payment": [
+        {
+          "name":"Lucas Moura Pereira",
+          "flag": "visa",
+          "cardNumber": "4526784056784325",
+          "ExpirationDate": "03/25",
+          "cvv": 901
+        },
+        {
+          "name":"Lucas Moura Pereira",
+          "flag": "MasterCard",
+          "cardNumber": "5526794157784325",
+          "ExpirationDate": "10/27",
+          "cvv": 201
+        }
+      ]
+    },
+    {
+      "name": "Lucas Moura Pereira",
+      "email": "lucasmourap@gmail.com",
+      "password": "123456",
+      "payment": [
+        {
+          "name":"Lucas Moura Pereira",
+          "flag": "visa",
+          "cardNumber": "4526784056784325",
+          "ExpirationDate": "03/25",
+          "cvv": 901
+        },
+        {
+          "name":"Lucas Moura Pereira",
+          "flag": "MasterCard",
+          "cardNumber": "5526794157784325",
+          "ExpirationDate": "10/27",
+          "cvv": 201
+        }
+      ]
+    }
+  ]
+}

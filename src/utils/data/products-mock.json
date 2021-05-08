@@ -1,0 +1,416 @@
+{
+  "products": {
+    "product": [
+      {
+        "image": {
+          "url": "/images/home/game1.jpg",
+          "title": "Population Zero",
+          "alt": "Imagem do jogo Population Zero"
+        },
+        "title": "Population Zero",
+        "shortDescription": "Agora é a hora de eliminar Handsome Jack.  Reúna seus amigos para correr desenfreadamente pelo mundo coletando milhões de iten.",
+        "longDescription": "The Homeworld games have been painstakingly re-mastered with key members of the original development team and taking critical influence and assistance from the passionate fan community. The Homeworld Remastered Collection introduces Relic's acclaimed space strategy games Homeworld.",
+        "learnMore": [
+          "Experience the epic space strategy games that redefined the RTS genre. Control your fleet and build an armada across more than 30 single-player missions. Choose unit types, fleet formations and flight tactics for each strategic situation. Utilize advanced research to construct ships ranging from light fighters to huge carriers and everything in between",
+          "As a free bonus, this collection also includes original, non-remastered versions of Homeworld Classic and Homeworld 2 Classic, preserving the purest form of the original releases with compatibility for modern operating systems."
+        ],
+        "gameDetails": {
+          "company": "Rockstar Games",
+          "realeaseDate": "november 16, 2019",
+          "platforms": ["windows", "linux", "mac"],
+          "editor": "2k",
+          "Rating": "18 +",
+          "genre": "Action",
+          "subGenre": "Adventure"
+        },
+        "system": [
+          {
+            "slug": "windows",
+            "minimum": {
+              "system": ["7", "8", "10"],
+              "processador": "Core i3 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            },
+            "recommend": {
+              "system": ["7", "8", "10"],
+              "processador": "Core i5 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            }
+          },
+          {
+            "slug": "MacOs",
+            "minimum": {
+              "system": ["High Sierra", "Mojave", "Catalina", "BigSur"],
+              "processador": "Core i3 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            },
+            "recommend": {
+              "system": ["High Sierra", "Mojave", "Catalina", "BigSur"],
+              "processador": "Core i5 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            }
+          },
+          {
+            "slug": "Linux",
+            "minimum": {
+              "system": ["Ubuntu", "Debian"],
+              "processador": "Core i3 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            },
+            "recommend": {
+              "system": ["Ubuntu", "Debian"],
+              "processador": "Core i5 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            }
+          }
+        ],
+        "fullPrice": "R$215,00",
+        "currentPrice": "R$215,00",
+        "isNew": true,
+        "isPopular": true,
+        "isFree": false
+      },
+      {
+        "image": {
+          "url": "/images/home/game1.jpg",
+          "title": "Population Zero",
+          "alt": "Imagem do jogo Population Zero"
+        },
+        "title": "Population Zero",
+        "description": "Agora é a hora de eliminar Handsome Jack.  Reúna seus amigos para correr desenfreadamente pelo mundo coletando milhões de iten.",
+        "company": "Rockstar Games",
+        "descriptionIcon": "wishlist",
+        "fullPrice": "R$215,00",
+        "currentPrice": "R$215,00"
+      },
+      {
+        "image": {
+          "url": "/images/home/game1.jpg",
+          "title": "Population Zero",
+          "alt": "Imagem do jogo Population Zero"
+        },
+        "title": "Population Zero",
+        "shortDescription": "Agora é a hora de eliminar Handsome Jack.  Reúna seus amigos para correr desenfreadamente pelo mundo coletando milhões de iten.",
+        "longDescription": "The Homeworld games have been painstakingly re-mastered with key members of the original development team and taking critical influence and assistance from the passionate fan community. The Homeworld Remastered Collection introduces Relic's acclaimed space strategy games Homeworld.",
+        "learnMore": [
+          "Experience the epic space strategy games that redefined the RTS genre. Control your fleet and build an armada across more than 30 single-player missions. Choose unit types, fleet formations and flight tactics for each strategic situation. Utilize advanced research to construct ships ranging from light fighters to huge carriers and everything in between",
+          "As a free bonus, this collection also includes original, non-remastered versions of Homeworld Classic and Homeworld 2 Classic, preserving the purest form of the original releases with compatibility for modern operating systems."
+        ],
+        "gameDetails": {
+          "company": "Rockstar Games",
+          "realeaseDate": "november 16, 2019",
+          "platforms": ["windows", "linux", "mac"],
+          "editor": "2k",
+          "Rating": "18 +",
+          "genre": "Action",
+          "subGenre": "Adventure"
+        },
+        "system": [
+          {
+            "slug": "windows",
+            "minimum": {
+              "system": ["7", "8", "10"],
+              "processador": "Core i3 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            },
+            "recommend": {
+              "system": ["7", "8", "10"],
+              "processador": "Core i5 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            }
+          },
+          {
+            "slug": "MacOs",
+            "minimum": {
+              "system": ["High Sierra", "Mojave", "Catalina", "BigSur"],
+              "processador": "Core i3 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            },
+            "recommend": {
+              "system": ["High Sierra", "Mojave", "Catalina", "BigSur"],
+              "processador": "Core i5 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            }
+          },
+          {
+            "slug": "Linux",
+            "minimum": {
+              "system": ["Ubuntu", "Debian"],
+              "processador": "Core i3 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            },
+            "recommend": {
+              "system": ["Ubuntu", "Debian"],
+              "processador": "Core i5 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            }
+          }
+        ],
+        "fullPrice": "R$215,00",
+        "currentPrice": "R$215,00",
+        "isNew": true,
+        "isPopular": true,
+        "isFree": false
+      },
+      {
+        "image": {
+          "url": "/images/home/game1.jpg",
+          "title": "Population Zero",
+          "alt": "Imagem do jogo Population Zero"
+        },
+        "title": "Population Zero",
+        "description": "Agora é a hora de eliminar Handsome Jack.  Reúna seus amigos para correr desenfreadamente pelo mundo coletando milhões de iten.",
+        "company": "Rockstar Games",
+        "descriptionIcon": "wishlist",
+        "fullPrice": "R$215,00",
+        "currentPrice": "R$215,00"
+      },
+      {
+        "image": {
+          "url": "/images/home/game1.jpg",
+          "title": "Population Zero",
+          "alt": "Imagem do jogo Population Zero"
+        },
+        "title": "Population Zero",
+        "shortDescription": "Agora é a hora de eliminar Handsome Jack.  Reúna seus amigos para correr desenfreadamente pelo mundo coletando milhões de iten.",
+        "longDescription": "The Homeworld games have been painstakingly re-mastered with key members of the original development team and taking critical influence and assistance from the passionate fan community. The Homeworld Remastered Collection introduces Relic's acclaimed space strategy games Homeworld.",
+        "learnMore": [
+          "Experience the epic space strategy games that redefined the RTS genre. Control your fleet and build an armada across more than 30 single-player missions. Choose unit types, fleet formations and flight tactics for each strategic situation. Utilize advanced research to construct ships ranging from light fighters to huge carriers and everything in between",
+          "As a free bonus, this collection also includes original, non-remastered versions of Homeworld Classic and Homeworld 2 Classic, preserving the purest form of the original releases with compatibility for modern operating systems."
+        ],
+        "gameDetails": {
+          "company": "Rockstar Games",
+          "realeaseDate": "november 16, 2019",
+          "platforms": ["windows", "linux", "mac"],
+          "editor": "2k",
+          "Rating": "18 +",
+          "genre": "Action",
+          "subGenre": "Adventure"
+        },
+        "system": [
+          {
+            "slug": "windows",
+            "minimum": {
+              "system": ["7", "8", "10"],
+              "processador": "Core i3 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            },
+            "recommend": {
+              "system": ["7", "8", "10"],
+              "processador": "Core i5 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            }
+          },
+          {
+            "slug": "MacOs",
+            "minimum": {
+              "system": ["High Sierra", "Mojave", "Catalina", "BigSur"],
+              "processador": "Core i3 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            },
+            "recommend": {
+              "system": ["High Sierra", "Mojave", "Catalina", "BigSur"],
+              "processador": "Core i5 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            }
+          },
+          {
+            "slug": "Linux",
+            "minimum": {
+              "system": ["Ubuntu", "Debian"],
+              "processador": "Core i3 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            },
+            "recommend": {
+              "system": ["Ubuntu", "Debian"],
+              "processador": "Core i5 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            }
+          }
+        ],
+        "fullPrice": "R$215,00",
+        "currentPrice": "R$215,00",
+        "isNew": true,
+        "isPopular": true,
+        "isFree": false
+      },
+      {
+        "image": {
+          "url": "/images/home/game1.jpg",
+          "title": "Population Zero",
+          "alt": "Imagem do jogo Population Zero"
+        },
+        "title": "Population Zero",
+        "description": "Agora é a hora de eliminar Handsome Jack.  Reúna seus amigos para correr desenfreadamente pelo mundo coletando milhões de iten.",
+        "company": "Rockstar Games",
+        "descriptionIcon": "wishlist",
+        "fullPrice": "R$215,00",
+        "currentPrice": "R$215,00"
+      },
+      {
+        "image": {
+          "url": "/images/home/game1.jpg",
+          "title": "Population Zero",
+          "alt": "Imagem do jogo Population Zero"
+        },
+        "title": "Population Zero",
+        "shortDescription": "Agora é a hora de eliminar Handsome Jack.  Reúna seus amigos para correr desenfreadamente pelo mundo coletando milhões de iten.",
+        "longDescription": "The Homeworld games have been painstakingly re-mastered with key members of the original development team and taking critical influence and assistance from the passionate fan community. The Homeworld Remastered Collection introduces Relic's acclaimed space strategy games Homeworld.",
+        "learnMore": [
+          "Experience the epic space strategy games that redefined the RTS genre. Control your fleet and build an armada across more than 30 single-player missions. Choose unit types, fleet formations and flight tactics for each strategic situation. Utilize advanced research to construct ships ranging from light fighters to huge carriers and everything in between",
+          "As a free bonus, this collection also includes original, non-remastered versions of Homeworld Classic and Homeworld 2 Classic, preserving the purest form of the original releases with compatibility for modern operating systems."
+        ],
+        "gameDetails": {
+          "company": "Rockstar Games",
+          "realeaseDate": "november 16, 2019",
+          "platforms": ["windows", "linux", "mac"],
+          "editor": "2k",
+          "Rating": "18 +",
+          "genre": "Action",
+          "subGenre": "Adventure"
+        },
+        "system": [
+          {
+            "slug": "windows",
+            "minimum": {
+              "system": ["7", "8", "10"],
+              "processador": "Core i3 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            },
+            "recommend": {
+              "system": ["7", "8", "10"],
+              "processador": "Core i5 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            }
+          },
+          {
+            "slug": "MacOs",
+            "minimum": {
+              "system": ["High Sierra", "Mojave", "Catalina", "BigSur"],
+              "processador": "Core i3 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            },
+            "recommend": {
+              "system": ["High Sierra", "Mojave", "Catalina", "BigSur"],
+              "processador": "Core i5 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            }
+          },
+          {
+            "slug": "Linux",
+            "minimum": {
+              "system": ["Ubuntu", "Debian"],
+              "processador": "Core i3 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            },
+            "recommend": {
+              "system": ["Ubuntu", "Debian"],
+              "processador": "Core i5 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            }
+          }
+        ],
+        "fullPrice": "R$215,00",
+        "currentPrice": "R$215,00",
+        "isNew": true,
+        "isPopular": true,
+        "isFree": false
+      },
+      {
+        "image": {
+          "url": "/images/home/game1.jpg",
+          "title": "Population Zero",
+          "alt": "Imagem do jogo Population Zero"
+        },
+        "title": "Population Zero",
+        "description": "Agora é a hora de eliminar Handsome Jack.  Reúna seus amigos para correr desenfreadamente pelo mundo coletando milhões de iten.",
+        "company": "Rockstar Games",
+        "descriptionIcon": "wishlist",
+        "fullPrice": "R$215,00",
+        "currentPrice": "R$215,00"
+      },
+      {
+        "image": {
+          "url": "/images/home/game1.jpg",
+          "title": "Population Zero",
+          "alt": "Imagem do jogo Population Zero"
+        },
+        "title": "Population Zero",
+        "shortDescription": "Agora é a hora de eliminar Handsome Jack.  Reúna seus amigos para correr desenfreadamente pelo mundo coletando milhões de iten.",
+        "longDescription": "The Homeworld games have been painstakingly re-mastered with key members of the original development team and taking critical influence and assistance from the passionate fan community. The Homeworld Remastered Collection introduces Relic's acclaimed space strategy games Homeworld.",
+        "learnMore": [
+          "Experience the epic space strategy games that redefined the RTS genre. Control your fleet and build an armada across more than 30 single-player missions. Choose unit types, fleet formations and flight tactics for each strategic situation. Utilize advanced research to construct ships ranging from light fighters to huge carriers and everything in between",
+          "As a free bonus, this collection also includes original, non-remastered versions of Homeworld Classic and Homeworld 2 Classic, preserving the purest form of the original releases with compatibility for modern operating systems."
+        ],
+        "gameDetails": {
+          "company": "Rockstar Games",
+          "realeaseDate": "november 16, 2019",
+          "platforms": ["windows", "linux", "mac"],
+          "editor": "2k",
+          "Rating": "18 +",
+          "genre": "Action",
+          "subGenre": "Adventure"
+        },
+        "system": [
+          {
+            "slug": "windows",
+            "minimum": {
+              "system": ["7", "8", "10"],
+              "processador": "Core i3 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            },
+            "recommend": {
+              "system": ["7", "8", "10"],
+              "processador": "Core i5 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            }
+          },
+          {
+            "slug": "MacOs",
+            "minimum": {
+              "system": ["High Sierra", "Mojave", "Catalina", "BigSur"],
+              "processador": "Core i3 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            },
+            "recommend": {
+              "system": ["High Sierra", "Mojave", "Catalina", "BigSur"],
+              "processador": "Core i5 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            }
+          },
+          {
+            "slug": "Linux",
+            "minimum": {
+              "system": ["Ubuntu", "Debian"],
+              "processador": "Core i3 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            },
+            "recommend": {
+              "system": ["Ubuntu", "Debian"],
+              "processador": "Core i5 3.3GHZ",
+              "GPU": "Intel HB 4000"
+            }
+          }
+        ],
+        "fullPrice": "R$215,00",
+        "currentPrice": "R$215,00",
+        "isNew": true,
+        "isPopular": true,
+        "isFree": false
+      },
+      {
+        "image": {
+          "url": "/images/home/game1.jpg",
+          "title": "Population Zero",
+          "alt": "Imagem do jogo Population Zero"
+        },
+        "title": "Population Zero",
+        "description": "Agora é a hora de eliminar Handsome Jack.  Reúna seus amigos para correr desenfreadamente pelo mundo coletando milhões de iten.",
+        "company": "Rockstar Games",
+        "descriptionIcon": "wishlist",
+        "fullPrice": "R$215,00",
+        "currentPrice": "R$215,00"
+      }
+    ]
+  }
+}

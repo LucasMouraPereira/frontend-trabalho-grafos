@@ -3,7 +3,7 @@
       "browser": true,
       "es6": true
     },
-    "extends": ["plugin:react/recommended", "airbnb", "prettier"],
+    "extends": ["plugin:jsx-a11y/recommended", "airbnb", "prettier"],
     "globals": {
       "Atomics": "readonly",
       "SharedArrayBuffer": "readonly"
@@ -15,7 +15,7 @@
       "ecmaVersion": 2020,
       "sourceType": "module"
     },
-    "plugins": ["react", "prettier"],
+    "plugins": ["react", "prettier", "jsx-a11y"],
     "rules": {
       "comma-dangle": "off",
       "quotes": [2, "double", "avoid-escape"],

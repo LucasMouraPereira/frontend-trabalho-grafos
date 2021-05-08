@@ -10,7 +10,7 @@ export const getServerSideProps = wrapper.getServerSideProps(
     const { home: homeData } = store.getState();
     return {
       props: {
-        test: { ...homeData.data.data },
+        products: homeData.products
       },
     };
   },
