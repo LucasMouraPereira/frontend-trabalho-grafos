@@ -1,18 +1,16 @@
 import { END } from "redux-saga";
-import { Creators as Actions } from "store/ducks/global";
+import { Creators as Actions } from "store/ducks/home";
 import { wrapper } from "store";
 
 export const getServerSideProps = wrapper.getServerSideProps(
-  async ({ store, req }) => {
-    store.dispatch(Actions.requestGlobal());
+  async ({ store }) => {
+    store.dispatch(Actions.requestHome());
     store.dispatch(END);
     await store.sagaTask.toPromise();
-    const { global: globalData } = store.getState();
-    const url = req.headers.referer;
+    const { home: homeData } = store.getState();
     return {
       props: {
-        header: url,
-        footer: { ...globalData.footer }
+        products: homeData.products
       },
     };
   },

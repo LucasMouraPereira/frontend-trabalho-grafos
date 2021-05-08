@@ -5,11 +5,13 @@
     "pages": [
       {
         "name": "Home",
-        "link": "/"
+        "link": "/",
+        "isHomeActive": true
       },
       {
         "name": "Store",
-        "link": "/loja"
+        "link": "/loja",
+        "isHomeActive": false
       }
     ],
     "cart": {

@@ -9,7 +9,7 @@ export const WrapperLogo = styled.div`
     font-size: 12px;
     color: ${({color}) => color};
     margin-left: 12px;
-    width: 150px;
+    max-width: 140px;
   }
 
   ${({style}) => style};

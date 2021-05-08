@@ -3,7 +3,7 @@ import sizes from "utils/style/breakpoints";
 
 export const Container = styled.div`
   width: 100%;
-  max-width: 160px;
+  max-width: 140px;
   height: 100%;
   color: var(--color-white-2);
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.12);
@@ -31,5 +31,5 @@ export const WrapperMenu = styled.div`
 `;
 
 export const SelectLink = styled.div`
-  border: ${({ isActive }) => isActive ? "3px solid var(--color-pink-1)" : "none"};
+  border: 3px solid var(--color-pink-1);
 `;

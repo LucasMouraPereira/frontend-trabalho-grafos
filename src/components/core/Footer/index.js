@@ -6,13 +6,13 @@ import * as S from "./styled";
 
 const Footer = () => (
   <S.FooterWrapper>
-    <S.ConteinerLogo>
+    <S.ContainerLogo>
       <Logo 
         color="#242424" 
         icon={footer.icon} 
         title={footer.title} 
       />
-    </S.ConteinerLogo>
+    </S.ContainerLogo>
     <S.WrapperSection>
       {footer.section.map(({ title, info }, index) => (
         <S.WrapperInformation key={index}>

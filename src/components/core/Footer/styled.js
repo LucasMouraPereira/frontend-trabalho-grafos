@@ -13,7 +13,7 @@ export const FooterWrapper = styled.footer`
   }
 `;
 
-export const ConteinerLogo = styled.div`
+export const ContainerLogo = styled.div`
   margin-bottom: 30px;
 
 `;

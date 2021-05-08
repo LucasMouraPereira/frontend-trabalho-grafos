@@ -17,6 +17,9 @@ const GlobalStyle = createGlobalStyle`
     --color-green-1: #3CD3C1;
     --color-blue-1: #06092B;  
     --color-pink-1: #F231A5;
+    --color-pink-2: #F062C0;
+    --color-red-1: #F23131;
+    --color-red-2: #FF5F5F;
   }
   * {
     margin: 0;

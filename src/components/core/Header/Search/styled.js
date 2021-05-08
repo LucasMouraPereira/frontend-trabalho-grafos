@@ -36,7 +36,7 @@ export const WrapperForm = styled.form`
 `;
 
 export const WrapperSearch = styled.div`
-  /* flex: 1;
+  flex: 1;
   max-width: 900px;
   display: flex;
   align-items: center;
@@ -50,7 +50,7 @@ export const WrapperSearch = styled.div`
     svg {
       display: none;
     }
-  } */
+  }
 `;
 
 export const InputStyled = styled.input`

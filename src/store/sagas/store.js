@@ -1,18 +1,15 @@
 import { takeLatest, put } from "redux-saga/effects";
 import { Types } from "store/ducks/store";
-import { header } from "utils/data/header-mock";
-import { footer } from "utils/data/footer-mock";
+import { isHome } from "utils/data/store-mock";
 
 function* requestStoreData() {
     try {
         const data = {
-            header,
-            footer,
+            isHome ,
         }
         yield put({
             type: Types.REQUEST_STORE_SUCCESS,
-            header: data.header,
-            footer: data.footer,
+            isHome : data.isHome ,
         });
     } catch (error) {
         yield put({

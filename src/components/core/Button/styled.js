@@ -16,10 +16,11 @@ export const Button = styled.button`
   line-height: 23px;
   text-align: center;
   text-transform: uppercase;
-  background: linear-gradient(178.59deg, #FF5F5F -14.51%, #F062C0 102.86%, #F23131 102.86%);
-  color: #FAFAFA;
+  background: linear-gradient(178.59deg, var(--color-red-2) -14.51%, var(--color-pink-2) 102.86%, var(--color-red-1) 102.86%);
+  border: var(--color-red-1);
+  color: var(--color-white-2);
   svg > path {
-    fill: #FAFAFA;
+    fill: var(--color-white-2);
   }
   ${({ style }) => style}
 `;
