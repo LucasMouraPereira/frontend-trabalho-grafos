@@ -1,0 +1,57 @@
+{
+  "tabs": [
+    {
+      "id": 0,
+      "text": "Sign in",
+      "initialState": true
+    },
+    {
+      "id": 1,
+      "text": "Sign up",
+      "initialState": false
+    }
+  ],
+  "signIn": {
+    "form": [
+      {
+        "field": "Email"
+      },
+      {
+        "field": "Password"
+      }
+    ],
+    "sendEmailLink": {
+      "text": "Forgot your password?"
+    },
+    "button": {
+      "text": "Sign in now"
+    },
+    "haveAccount": {
+      "text": "Don`t have an account?",
+      "textLink": "Sign up"
+    }
+  },
+  "singUp": {
+    "form": [
+      {
+        "field": "Name"
+      },
+      {
+        "field": "Email"
+      },
+      {
+        "field": "Password"
+      },
+      {
+        "field": "Confirm password"
+      }
+    ],
+    "button": {
+      "text": "Sign up now"
+    },
+    "haveAccount": {
+      "text": "Already have an account?",
+      "textLink": "Sign in"
+    }
+  }
+}
