@@ -1,0 +1,49 @@
+{
+  "information": [
+    {
+      "title": "News"
+    },
+    {
+      "title": "Most popular",
+      "banner": {
+        "src": "/images/home/img1.png",
+        "alt": "",
+        "title": "",
+        "bg": "/images/home/bg1.png",
+        "text": "Read Dead it`s back",
+        "pharse": "Come see John`s new adventures",
+        "button": {
+          "text": "Buy now"
+        }
+      }
+    },
+    {
+      "title": "Upcoming",
+      "banner": {
+        "src": "/images/home/img2.png",
+        "alt": "",
+        "title": "",
+        "bg": "/images/home/bg2.png",
+        "text": "Read Dead it`s back",
+        "pharse": "Come see John`s new adventures",
+        "button": {
+          "text": "Buy now"
+        }
+      }
+    },
+    {
+      "title": "Free games",
+      "banner": {
+        "src": "/images/home/img3.png",
+        "alt": "",
+        "title": "",
+        "bg": "/images/home/bg3.png",
+        "text": "Read Dead it`s back",
+        "pharse": "Come see John`s new adventures",
+        "button": {
+          "text": "Buy now"
+        }
+      }
+    }
+  ]
+}
