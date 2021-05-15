@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import sizes from "utils/style/breakpoints";
 
 export const HeaderContainer = styled.header`
   width: 100%;
@@ -24,18 +23,5 @@ export const WrapperHeader = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin: 50px;
-`;
-
-export const SearchBar = styled.div`
-  width: 100%;
-  background: var(--color-white-1);
-  display: flex;
-  margin-right: 40px;
-  margin-left: 17px;
-  
-  @media (max-width: ${sizes.md}) {
-    height: 64px;
-    top: 63px;
-  }
+  padding: 0 90px;
 `;

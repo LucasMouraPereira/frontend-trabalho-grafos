@@ -8,9 +8,9 @@ const Card = ({ image, title, descriptionIcon, company, price }) => (
   <S.WrapperCard>
     <S.WrapperImage>
       <img 
-        src={image} 
-        // alt={alt} 
-        // title={titleImage}
+        src={image.url} 
+        alt={image.alt} 
+        title={image.title}
       />
     </S.WrapperImage>
     <S.WrapperText>
@@ -21,22 +21,21 @@ const Card = ({ image, title, descriptionIcon, company, price }) => (
         />
       </S.Text>
       <p>{company}</p>
+      <S.WrapperBuy>
+        <S.ContentSpan>
+          <span>{price}</span>
+        </S.ContentSpan>
+      </S.WrapperBuy>
     </S.WrapperText>
-    <S.WrapperBuy>
-      <S.ContentSpan>
-        <span>{price}</span>
-      </S.ContentSpan>
-      <S.ContentIcon>
-        lucas
-      </S.ContentIcon>
-    </S.WrapperBuy>
   </S.WrapperCard>
 );
 
 Card.propTypes = {
-  image: PropTypes.string.isRequired,
-  // titleImage: PropTypes.string.isRequired,
-  // alt: PropTypes.string.isRequired,
+  image: PropTypes.shape({
+    url: PropTypes.string,
+    alt: PropTypes.string,
+    title: PropTypes.string,
+  }).isRequired,
   title: PropTypes.string.isRequired,
   descriptionIcon: PropTypes.string.isRequired,
   company: PropTypes.string.isRequired,

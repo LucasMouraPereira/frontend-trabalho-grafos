@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
 export const WrapperIcon = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   cursor: pointer;
   margin-right: 27px;
+
   svg {
-    path{
+    path {
       fill: var(--color-white-2);
     }
   }

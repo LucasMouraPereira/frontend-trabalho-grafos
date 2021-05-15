@@ -4,6 +4,7 @@ import { HYDRATE } from "next-redux-wrapper";
 const INITIAL_STATE = {
   isLoading: false,
   products: {},
+  aside: {},
   information: [],
 };
 
@@ -21,6 +22,7 @@ const requestHome = (state) => ({
 const requestHomeSuccess = (state, data) => ({
   ...state,
   products: data.products,
+  aside: data.aside,
   information: data.information,
 });
 

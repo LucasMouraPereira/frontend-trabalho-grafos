@@ -11,6 +11,7 @@ export const getServerSideProps = wrapper.getServerSideProps(
     return {
       props: {
         products: homeData.products,
+        aside: homeData.aside,
         information: homeData.information
       },
     };

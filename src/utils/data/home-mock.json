@@ -1,4 +1,121 @@
 {
+  "aside": {
+    "price": {
+      "title": "Price",
+      "button": [
+        {
+          "id": 1,
+          "checked": false,
+          "label": "Under R$50"
+        },
+        {
+          "id": 2,
+          "checked": false,
+          "label": "Under R$100"
+        },
+        {
+          "id": 3,
+          "checked": false,
+          "label": "Under R$150"
+        },
+        {
+          "id": 4,
+          "checked": false,
+          "label": "Under R$200"
+        },
+        {
+          "id": 5,
+          "checked": false,
+          "label": "free"
+        },
+        {
+          "id": 6,
+          "checked": false,
+          "label": "Discounted"
+        }
+      ]
+    },
+    "sort": {
+      "title": "Sort by",
+      "button": [
+        {
+          "id": 1,
+          "checked": false,
+          "label": "High to low"
+        },
+        {
+          "id": 2,
+          "checked": false,
+          "label": "Low to high"
+        }
+      ]
+    },
+    "system": {
+      "title": "System",
+      "button": [
+        {
+          "id": 1,
+          "checked": false,
+          "label": "Windows"
+        },
+        {
+          "id": 2,
+          "checked": false,
+          "label": "Linux"
+        },
+        {
+          "id": 3,
+          "checked": false,
+          "label": "Mac"
+        }
+      ]
+    },
+    "genre": {
+      "title": "Genre",
+      "button": [
+        {
+          "id": 1,
+          "checked": false,
+          "label": "Action"
+        },
+        {
+          "id": 2,
+          "checked": false,
+          "label": "Adventure"
+        },
+        {
+          "id": 3,
+          "checked": false,
+          "label": "FPS"
+        },
+        {
+          "id": 4,
+          "checked": false,
+          "label": "MMORPG"
+        },
+        {
+          "id": 5,
+          "checked": false,
+          "label": "RPG"
+        },
+        {
+          "id": 6,
+          "checked": false,
+          "label": "Indie"
+        },
+        {
+          "id": 7,
+          "checked": false,
+          "label": "Shooters"
+        },
+        {
+          "id": 8,
+          "checked": false,
+          "label": "Simulation"
+        }
+      ]
+    }
+  },
   "information": [
     {
       "title": "News"

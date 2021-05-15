@@ -4,26 +4,30 @@ import PropTypes from "prop-types";
 import IconFavoriteBorder from "utils/static/svg/favorite-border.svg";
 import IconFavoriteFull from "utils/static/svg/favorite-full.svg";
 
+import * as S from "./styled";
+
 const IconWish = ({ descriptionIcon }) => {
   const [isFavorite, setIsFavorite] = useState(false);
   const sendFavorite = () => {
     if(isFavorite){
       setIsFavorite(false);
     }
-    setIsFavorite(true);
+    if(!isFavorite) {
+      setIsFavorite(true);
+    }
   };
   return(
-    <div>
-      <div onClick = {() => sendFavorite()}>
-        {isFavorite 
+    <S.WrapperIcon>
+      <S.IconButton role="button" aria-hidden="true" onClick = {() => sendFavorite()}>
+        {!isFavorite 
           ? 
             <IconFavoriteBorder /> 
           : 
             <IconFavoriteFull />
           }
-      </div>
+      </S.IconButton>
       {descriptionIcon && <spa>{descriptionIcon}</spa>}
-    </div>
+    </S.WrapperIcon>
   );
 };
 
