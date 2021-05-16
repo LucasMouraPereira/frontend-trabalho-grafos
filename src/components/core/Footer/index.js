@@ -9,28 +9,28 @@ const Footer = () => (
     <S.ContainerLogo>
       <Logo 
         color="#242424" 
-        icon={footer.icon} 
-        title={footer.title} 
+        icon={footer?.icon} 
+        title={footer?.title} 
       />
     </S.ContainerLogo>
     <S.WrapperSection>
-      {footer.section.map(({ title, info }, index) => (
+      {footer?.section?.map(({ title, info }, index) => (
         <S.WrapperInformation key={index}>
           <h3>{title}</h3>
           <S.Content />
-          {info.map((redirect) => (
-            <S.WrapperText key={redirect.text}>
+          {info?.map((redirect) => (
+            <S.WrapperText key={redirect?.text}>
               {redirect.link
                 ?
-                <a href={redirect.link}>{redirect.text}</a>
+                <a href={redirect?.link}>{redirect?.text}</a>
                 :
-                <p>{redirect.text}</p>}
+                <p>{redirect?.text}</p>}
             </S.WrapperText>
           ))}
         </S.WrapperInformation>
       ))}
     </S.WrapperSection>
-    <S.Phrase>{footer.pharse}</S.Phrase>
+    <S.Phrase>{footer?.pharse}</S.Phrase>
   </S.FooterWrapper>
 );
 

@@ -4,7 +4,7 @@ import IconWish from "components/core/IconWish";
 
 import * as S from "./styled";
 
-const Card = ({ image, title, descriptionIcon, company, price }) => (
+const Card = ({ image, title, company, price }) => (
   <S.WrapperCard>
     <S.WrapperImage>
       <img 
@@ -16,9 +16,7 @@ const Card = ({ image, title, descriptionIcon, company, price }) => (
     <S.WrapperText>
       <S.Text>
         <h3>{title}</h3>
-        <IconWish 
-          descriptionIcon={descriptionIcon}
-        />
+        <IconWish />
       </S.Text>
       <p>{company}</p>
       <S.WrapperBuy>
@@ -37,7 +35,6 @@ Card.propTypes = {
     title: PropTypes.string,
   }).isRequired,
   title: PropTypes.string.isRequired,
-  descriptionIcon: PropTypes.string.isRequired,
   company: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
 };

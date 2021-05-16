@@ -19,19 +19,19 @@
         "info": [
           {
             "text": "Instagram",
-            "link": "./"
+            "link": "/"
           },
           {
             "text": "Twitter",
-            "link": "./"
+            "link": "/"
           },
           {
             "text": "YouTube",
-            "link": "./"
+            "link": "/"
           },
           {
             "text": "Facebook",
-            "link": "./"
+            "link": "/"
           }
         ]
       },
@@ -40,15 +40,15 @@
         "info": [
           {
             "text": "Home",
-            "link": "./"
+            "link": "/"
           },
           {
             "text": "Store",
-            "link": "./loja"
+            "link": "/loja"
           },
           {
             "text": "Discover",
-            "link": "./"
+            "link": "/"
           }
         ]
       },

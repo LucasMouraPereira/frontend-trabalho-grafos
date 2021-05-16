@@ -9,67 +9,67 @@ const Aside = ({ price, sort, system, genre }) => (
       <S.Section>
         <h4>{price.title}</h4>
         <S.Border />
-        {price.button.map(({ id, checked, label }) => (
+        {price?.button?.map(({ id, checked, label }) => (
           <S.WrapperInput key={id}>
             <input
-              id={price.title}
-              name={price.title}
+              id={price?.title}
+              name={price?.title}
               type="checkbox"
               checked={checked}
-              value={price.title}
+              value={price?.title}
             />
-            <label htmlFor={price.title}>{label}</label>
+            <label htmlFor={price?.title}>{label}</label>
           </S.WrapperInput>
         ))}
       </S.Section>
       <S.Line />
       <S.Section>
-        <h4>{sort.title}</h4>
+        <h4>{sort?.title}</h4>
         <S.Border />
-        {sort.button.map(({ id, checked, label }) => (
+        {sort?.button?.map(({ id, checked, label }) => (
           <S.WrapperInput key={id}>
             <input
-              id={sort.title}
-              name={sort.title}
+              id={sort?.title}
+              name={sort?.title}
               type="checkbox"
               checked={checked}
-              value={sort.title}
+              value={sort?.title}
             />
-            <label htmlFor={sort.title}>{label}</label>
+            <label htmlFor={sort?.title}>{label}</label>
           </S.WrapperInput>
         ))}
       </S.Section>
       <S.Line />
       <S.Section>
-        <h4>{system.title}</h4>
+        <h4>{system?.title}</h4>
         <S.Border />
-        {system.button.map(({ id, checked, label }) => (
+        {system?.button?.map(({ id, checked, label }) => (
           <S.WrapperInput key={id}>
             <input
-              id={system.title}
-              name={system.title}
+              id={system?.title}
+              name={system?.title}
               type="checkbox"
               checked={checked}
-              value={system.title}
+              value={system?.title}
             />
-            <label htmlFor={system.title}>{label}</label>
+            <label htmlFor={system?.title}>{label}</label>
           </S.WrapperInput>
         ))}
       </S.Section>
       <S.Line />
       <S.Section>
-        <h4>{genre.title}</h4>
+        <h4>{genre?.title}</h4>
         <S.Border />
-        {genre.button.map(({ id, checked, label }) => (
+        {genre?.button?.map(({ id, checked, label }) => (
           <S.WrapperInput key={id}>
             <input
-              id={genre.title}
-              name={genre.title}
+              id={genre?.title}
+              name={genre?.title}
               type="checkbox"
               checked={checked}
-              value={genre.title}
+              value={genre?.title}
             />
-            <label htmlFor={genre.title}>{label}</label>
+            <label htmlFor={genre?.title}>{label}</label>
           </S.WrapperInput>
         ))}
       </S.Section>

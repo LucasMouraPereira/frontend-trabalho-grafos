@@ -16,11 +16,10 @@ const Home = ({ products, aside }) => {
       <S.WrapperBody>
         <Search handleSubmit={() => ({})} />
         <S.GridCards>
-          {products.map(({ image, title, descriptionIcon, gameDetails, currentPrice }) => (
+          {products.map(({ image, title, gameDetails, currentPrice }) => (
             <Card
               image={image}
               title={title}
-              descriptionIcon={descriptionIcon}
               company={gameDetails.company}
               price={currentPrice}
             />
@@ -41,7 +40,6 @@ Home.propTypes = {
         alt: PropTypes.string.isRequired,
       }).isRequired,
       title: PropTypes.string.isRequired,
-      descriptionIcon: PropTypes.string.isRequired,
       gameDetails: PropTypes.shape({
         company: PropTypes.string,
       }).isRequired,
