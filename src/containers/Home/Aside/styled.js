@@ -6,7 +6,6 @@ export const AsideContainer = styled.aside`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 90px 0 0;
 `;
 
 export const WrapperFilter = styled.div`

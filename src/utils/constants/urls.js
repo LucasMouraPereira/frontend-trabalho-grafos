@@ -1,9 +1,10 @@
 const HOME = "/";
-const STORE = "/loja";
-const CART = "/cart";
-
+const DETAILS = "/details"
+// const STORE = "/loja";
+// const CART = "/cart";
+const DETAILS_SLUG = "/:details";
 module.exports = {
     HOME,
-    STORE,
-    CART,
+    DETAILS,
+    DETAILS_SLUG,
 };

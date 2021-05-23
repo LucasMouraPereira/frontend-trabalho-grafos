@@ -12,46 +12,49 @@
     }
   ],
   "signIn": {
+    "title": "Sign in",
     "form": [
       {
+        "type": "email",
+        "id": "email",
         "field": "Email"
       },
       {
+        "type": "password",
+        "id": "password",
         "field": "Password"
       }
     ],
-    "sendEmailLink": {
-      "text": "Forgot your password?"
-    },
     "button": {
       "text": "Sign in now"
-    },
-    "haveAccount": {
-      "text": "Don`t have an account?",
-      "textLink": "Sign up"
     }
   },
-  "singUp": {
+  "signUp": {
+    "title": "Sign up",
     "form": [
       {
+        "type": "account",
+        "id": "account",
         "field": "Name"
       },
       {
+        "type": "email",
+        "id": "email",
         "field": "Email"
       },
       {
+        "type": "password",
+        "id": "password",
         "field": "Password"
       },
       {
+        "type": "password",
+        "id": "confirmPassword",
         "field": "Confirm password"
       }
     ],
     "button": {
       "text": "Sign up now"
-    },
-    "haveAccount": {
-      "text": "Already have an account?",
-      "textLink": "Sign in"
     }
   }
 }

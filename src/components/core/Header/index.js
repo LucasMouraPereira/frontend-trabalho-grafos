@@ -1,6 +1,6 @@
 import React, { useState, memo } from "react";
 import { header } from "utils/data/header-mock.json";
-import { tabs } from "utils/data/forms-mock.json";
+import { tabs, signIn, signUp} from "utils/data/forms-mock.json";
 import Link from "next/link";
 import { HOME } from "utils/constants/urls";
 
@@ -32,7 +32,13 @@ const Header = () => {
           <Button onClick={() => setIsOpenModal(!isOpenModal)} text={header.button.name} />
         </S.WrapperHeader>
       </S.HeaderContainer>
-      <Modal isOpen={isOpenModal} setIsOpen={setIsOpenModal} tabs={tabs} content="lucas" />
+      <Modal 
+        isOpen={isOpenModal} 
+        setIsOpen={setIsOpenModal} 
+        tabs={tabs}
+        formSignIn={signIn}
+        formSignUp={signUp}
+        />
     </>
   );
 };

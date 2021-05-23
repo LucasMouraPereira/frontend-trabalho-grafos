@@ -1,5 +1,6 @@
 import React, { useRef, useState} from "react";
 import PropTypes from "prop-types";
+import Logo from "components/core/Logo";
 
 import SignIn from "components/core/SignIn";
 import SignUp from "components/core/SignUp";
@@ -8,7 +9,14 @@ import { useOutsideClick } from "utils/hooks";
 
 import * as S from "./styled";
 
-const Modal = ({ setIsOpen, isOpen, title, tabs }) => {
+const Modal = ({ 
+  setIsOpen, 
+  isOpen, 
+  title, 
+  tabs, 
+  formSignIn, 
+  formSignUp 
+}) => {
   const wrapperRef = useRef(null);
   useOutsideClick(wrapperRef, () => setIsOpen(false));
   const [isActiveTabs, setActiveTabs] = useState(0);
@@ -16,6 +24,19 @@ const Modal = ({ setIsOpen, isOpen, title, tabs }) => {
   const handleActiveTab = (id) => {
     if (id !== isActiveTabs) {
       setActiveTabs(id);
+    }
+  };
+  const styledLogo = {
+    flexDirection: "column",
+    justifyContent: "center",
+    height: "140px",
+    "h1": {
+      fontSize: "24px",
+      maxWidth: "183px",
+      marginLeft: "unset",
+    },
+    "img": {
+      width: "85px",
     }
   };
 
@@ -36,7 +57,13 @@ const Modal = ({ setIsOpen, isOpen, title, tabs }) => {
           </S.ModalHeader>
           {tabs.map(({ id }) => (
             <S.ModalBody isActive={isActiveTabs === id}>
-              {isActiveTabs === 0 ? <SignIn /> : <SignUp />}
+              <Logo 
+                color="#000000" 
+                icon="/images/global/png/Icon.png"
+                title="Story Games" 
+                style={styledLogo} 
+              />
+              {isActiveTabs === 0 ? <SignIn formSignIn={formSignIn} /> : <SignUp formSignUp={formSignUp} />}
             </S.ModalBody>
           ))}
         </S.ModalContent>
@@ -55,6 +82,39 @@ Modal.propTypes = {
   ),
   setIsOpen: PropTypes.func,
   isOpen: PropTypes.bool,
+  formSignIn: PropTypes.shape({
+    title: PropTypes.string,
+    form: PropTypes.arrayOf(
+      PropTypes.shape({
+        field: PropTypes.string,
+      })
+    ),
+    sendEmailLink: PropTypes.shape({
+      text: PropTypes.string,
+    }),
+    button: PropTypes.shape({
+      text: PropTypes.string,
+    }),
+    haveAccount: PropTypes.shape({
+      text: PropTypes.string,
+      textLink: PropTypes.string,
+    })
+  }).isRequired,
+  formSignUp: PropTypes.shape({
+    title: PropTypes.string,
+    form: PropTypes.arrayOf(
+      PropTypes.shape({
+        field: PropTypes.string,
+      })
+    ),
+    button: PropTypes.shape({
+      text: PropTypes.string,
+    }),
+    haveAccount: PropTypes.shape({
+      text: PropTypes.string,
+      textLink: PropTypes.string,
+    })
+  }).isRequired,
 };
 
 Modal.defaultProps = {

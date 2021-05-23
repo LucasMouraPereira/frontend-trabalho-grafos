@@ -4,9 +4,17 @@ export const WrapperCard = styled.div`
   width: 100%;
   max-width: 293px;
   background-color: var(--color-white-1);
+  border-radius: 7px;
+  cursor: pointer;
 `;
 
-export const WrapperImage = styled.div``;
+export const WrapperImage = styled.div`
+  img {
+    width: 100%;
+    max-width: 293px;
+    border-radius: 7px;
+  }
+`;
 
 export const WrapperText = styled.div`
   display: flex;
@@ -59,7 +67,7 @@ export const ContentSpan = styled.div`
     align-items: center;
     text-align: center;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 `;
 

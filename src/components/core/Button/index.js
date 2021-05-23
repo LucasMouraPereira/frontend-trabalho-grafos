@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 
 import * as S from "./styled";
 
-const Button = ({ text, icon, style, onClick }) => (
-  <S.Button onClick={onClick} style={style} type="button">
+const Button = ({ type, text, icon, style, onClick }) => (
+  <S.Button onClick={onClick} style={style} type={type}>
     {icon && <S.IconContainer>{icon}</S.IconContainer>}
     {text}
   </S.Button>
@@ -12,6 +12,7 @@ const Button = ({ text, icon, style, onClick }) => (
 
 Button.propTypes = {
   onClick: PropTypes.func,
+  type: PropTypes.string,
   text: PropTypes.string,
   style: PropTypes.object,
   icon: PropTypes.element,
@@ -19,6 +20,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
   onClick: () => {},
+  type: "button",
   text: "",
   style: {},
   icon: null,

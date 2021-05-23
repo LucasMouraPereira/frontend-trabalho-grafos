@@ -3,9 +3,9 @@ import { HYDRATE } from "next-redux-wrapper";
 
 const INITIAL_STATE = {
   isLoading: false,
-  products: {},
+  products: [],
   aside: {},
-  information: [],
+  pages: {},
 };
 
 export const { Creators, Types } = createActions({
@@ -23,7 +23,7 @@ const requestHomeSuccess = (state, data) => ({
   ...state,
   products: data.products,
   aside: data.aside,
-  information: data.information,
+  pages: data.pages,
 });
 
 const requestHomeFail = (state, error) => ({

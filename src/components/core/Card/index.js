@@ -8,9 +8,9 @@ const Card = ({ image, title, company, price }) => (
   <S.WrapperCard>
     <S.WrapperImage>
       <img 
-        src={image.url} 
-        alt={image.alt} 
-        title={image.title}
+        src={image} 
+        alt={title} 
+        title={title}
       />
     </S.WrapperImage>
     <S.WrapperText>
@@ -21,7 +21,7 @@ const Card = ({ image, title, company, price }) => (
       <p>{company}</p>
       <S.WrapperBuy>
         <S.ContentSpan>
-          <span>{price}</span>
+          <span>{`R$ ${price.replace(".",",")}`}</span>
         </S.ContentSpan>
       </S.WrapperBuy>
     </S.WrapperText>

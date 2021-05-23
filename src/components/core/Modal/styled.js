@@ -21,7 +21,7 @@ export const ModalContent = styled.div`
   left: 50%;
   width: 90%;
   max-width: 40%;
-  height: 600px;
+  height: 650px;
   max-height: 100%;
   transform: translate(-50%, -50%);
   display: flex;

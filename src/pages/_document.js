@@ -33,8 +33,8 @@ export default class MyDocument extends Document {
       <Html lang="pt">
         <Head>
           {this.props.styleTags}
-          <link rel="icon" href="/favicon.ico" />
-          <script type="text/javascript" defer src="//assets.pinterest.com/js/pinit.js" />
+          <link rel="icon" href="" />
+          <script type="text/javascript" defer src="" />
         </Head>
         <body>
           <Main />
