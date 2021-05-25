@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { END } from "redux-saga";
 import PropTypes from "prop-types";
 import { Creators as Actions } from "store/ducks/home";
@@ -7,18 +7,16 @@ import { wrapper } from "store";
 import HomeContainer from "containers/Home";
 import Pagination from "components/core/Pagination";
 
-const HomePage = ({ products, aside, pages }) => {
-  const [offset, setOffset] = useState(0);
-  return (
+const HomePage = ({ products, aside, actualPage, totalPerPage, totalItems, totalPages }) => (
     <>
       <HomeContainer products={products} aside={aside} />
-      <Pagination limit={pages.length} total={pages.total} offset={offset} setOffset={setOffset} />
+      <Pagination limit={totalPerPage} total={totalItems} actualPage={actualPage} totalPages={totalPages}/> 
     </>
   );
-};
 
-export const getServerSideProps = wrapper.getServerSideProps(async ({ store }) => {
-  store.dispatch(Actions.requestHome());
+export const getServerSideProps = wrapper.getServerSideProps(async ({ store, query }) => {
+  const id = parseInt(query?.gamePage, 10);
+  store.dispatch(Actions.requestHome(id, 12));
   store.dispatch(END);
   await store.sagaTask.toPromise();
   const { home: homeData } = store.getState();
@@ -26,7 +24,10 @@ export const getServerSideProps = wrapper.getServerSideProps(async ({ store }) =
     props: {
       products: homeData.products,
       aside: homeData.aside,
-      pages: homeData.pages,
+      actualPage: homeData.actualPage,
+      totalPerPage: homeData.totalPerPage,
+      totalItems: homeData.totalItems,
+      totalPages: homeData.totalPages
     },
   };
 });
@@ -82,7 +83,10 @@ HomePage.propTypes = {
       ),
     }),
   }).isRequired,
-  pages: PropTypes.objectOf(PropTypes.any).isRequired,
+  actualPage: PropTypes.number.isRequired, 
+  totalPerPage: PropTypes.number.isRequired, 
+  totalItems: PropTypes.number.isRequired, 
+  totalPages: PropTypes.number.isRequired
 };
 
 export default HomePage;

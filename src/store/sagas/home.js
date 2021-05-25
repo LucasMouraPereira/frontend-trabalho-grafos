@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import { takeLatest, put } from "redux-saga/effects";
 import { Types } from "store/ducks/home";
 import api from "services/api";
@@ -6,26 +7,30 @@ import { PRODUCTS } from "utils/constants/endpoints";
 
 import { aside, information } from "utils/data/home-mock";
 
-function* requestHomeData() {
+function* requestHomeData({page = 1, perPage = 12}) {
   try {
     const { data: response } = yield api({
       method: GET,
-      url: `${PRODUCTS}?page=${1}&length=${12}`,
+      url: `${PRODUCTS}?page=${page}&length=${perPage}`,
     });
-
     const data = {
       products: response.products,
       information,
       aside,
-      pages: response.meta,
+      page: response.meta.page,
+      length: response.meta.length,
+      total: response.meta.total,
+      totalPages: response.meta.total_pages,
     };
-
     yield put({
       type: Types.REQUEST_HOME_SUCCESS,
       products: data.products,
       information: data.information,
       aside: data.aside,
-      pages: data.pages,
+      actualPage: data.page,
+      totalPerPage: data.length,
+      totalItems: data.total,
+      totalPages: data.totalPages
     });
   } catch (error) {
     const sendError = JSON.stringify(error);

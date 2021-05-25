@@ -15,8 +15,8 @@ const Home = ({ products, aside }) => (
     <S.WrapperBody>
       <Search handleSubmit={() => ({})} />
       <S.GridCards>
-        {products.map(({ image_url, name, developer, price }) => (
-          <Card image={image_url} title={name} company={developer} price={price} />
+        {products.map(({ id, image_url, name, developer, price }) => (
+          <Card id={id} image={image_url} title={name} company={developer} price={price} />
         ))}
       </S.GridCards>
     </S.WrapperBody>
@@ -26,6 +26,7 @@ const Home = ({ products, aside }) => (
 Home.propTypes = {
   products: PropTypes.arrayOf(
     PropTypes.shape({
+      id: PropTypes.number.isRequired,
       image_url: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
       developer: PropTypes.string.isRequired,

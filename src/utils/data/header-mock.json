@@ -5,7 +5,12 @@
     "pages": [
       {
         "name": "Home",
-        "link": "/",
+        "link": "/games/1",
+        "isHomeActive": true
+      },
+      {
+        "name": "Wishlist",
+        "link": "/wishlist",
         "isHomeActive": true
       }
     ],

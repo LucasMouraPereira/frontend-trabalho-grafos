@@ -21,7 +21,15 @@ export const WrapperHeader = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: 0 90px;
+`;
+
+export const Right = styled.div`
+  display: flex;
+`;
+
+export const Left = styled.div`
+  display: flex;
 `;

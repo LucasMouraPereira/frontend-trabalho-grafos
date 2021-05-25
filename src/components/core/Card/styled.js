@@ -4,7 +4,7 @@ export const WrapperCard = styled.div`
   width: 100%;
   max-width: 293px;
   background-color: var(--color-white-1);
-  border-radius: 7px;
+  border-radius: 3px;
   cursor: pointer;
 `;
 
@@ -12,7 +12,8 @@ export const WrapperImage = styled.div`
   img {
     width: 100%;
     max-width: 293px;
-    border-radius: 7px;
+    height: 137px;
+    border-radius: 3px;
   }
 `;
 

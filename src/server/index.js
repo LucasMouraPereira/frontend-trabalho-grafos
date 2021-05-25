@@ -24,7 +24,7 @@ app.prepare().then(() => {
   if (dev) {
     console.info(
       `ecommerce is running at: ${chalk.underline(
-        `http://localhost:${process.env.PORT}`,
+        `http://localhost:${process.env.PORT}/games/1`,
       )}`,
     );
   } else {

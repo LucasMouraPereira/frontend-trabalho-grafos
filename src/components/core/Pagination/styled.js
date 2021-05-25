@@ -41,13 +41,4 @@ export const Items = styled.li`
       var(--color-red-1) 102.86%
     );
   }
-
-  .pagination__item--active {
-    font-weight: bold;
-    opacity: 0.3;
-    cursor: ;
-  }
-  .pagination__item--active:focus {
-    outline: none;
-  }
 `;

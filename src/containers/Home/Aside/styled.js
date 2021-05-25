@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const AsideContainer = styled.aside`
-  width: 100%;
-  max-width: 414px;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,22 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
+import { useRouter } from "next/router";
 import PropTypes from "prop-types";
-
 import ArrowBack from "utils/static/svg/arrow-back.svg";
 import ArrowForward from "utils/static/svg/arrow-forward.svg";
+import { HOME } from "utils/constants/urls";
 
 import * as S from "./styled";
 
-const Pagination = ({ limit, total, setOffset, offset }) => {
-  const MAX_ITEMS = 9;
+const Pagination = ({ limit, total}) => {
+  const router = useRouter();
+  const [offset, setOffset] = useState(0);
+  const MAX_ITEMS = 3;
   const MAX_LEFT = (MAX_ITEMS - 1) / 2;
   const current = offset ? offset / limit + 1 : 1;
   const pages = Math.ceil(total / limit);
   const first = Math.max(current - MAX_LEFT, 1);
 
   const onPageChange = (page) => {
+    const href = `${HOME}/${page}`
     setOffset((page - 1) * limit);
+    router.push(href);
   };
-
 
   return (
     <S.Pagination>
@@ -54,8 +58,6 @@ const Pagination = ({ limit, total, setOffset, offset }) => {
 Pagination.propTypes = {
   limit: PropTypes.number.isRequired,
   total: PropTypes.number.isRequired,
-  offset: PropTypes.number.isRequired,
-  setOffset: PropTypes.func.isRequired
 };
 
 export default Pagination;

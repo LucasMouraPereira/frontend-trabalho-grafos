@@ -5,11 +5,14 @@ const INITIAL_STATE = {
   isLoading: false,
   products: [],
   aside: {},
-  pages: {},
+  actualPage: 1,
+  totalPerPage: 0,
+  totalItems: 0,
+  totalPages: 0,
 };
 
 export const { Creators, Types } = createActions({
-  requestHome: ["home"],
+  requestHome: ["page", "perPage"],
   requestHomeSuccess: ["data"],
   requestHomeFail: ["error"],
 });
@@ -23,7 +26,10 @@ const requestHomeSuccess = (state, data) => ({
   ...state,
   products: data.products,
   aside: data.aside,
-  pages: data.pages,
+  actualPage: data.actualPage,
+  totalPerPage: data.totalPerPage,
+  totalItems: data.totalItems,
+  totalPages: data.totalPages,
 });
 
 const requestHomeFail = (state, error) => ({
