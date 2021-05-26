@@ -5,7 +5,7 @@ export const Container = styled.div`
   align-items: baseline;
   justify-content: space-evenly;
   width: 100%;
-  padding: 130px 0 70px;
+  padding: 70px 0;
 `;
 
 export const Content = styled.div`

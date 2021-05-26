@@ -14,10 +14,13 @@ export async function getServerSideProps({ res, query: { name, email, password, 
         email: `${email}`,
         password: `${password}`,
         confirmPassword: `${confirmPassword}`,
+      },
+      headers: {
+        
       }
     });
     console.log(data);
-    console.log(res)
+    console.log(res.setHeader)
     return {
       props: {}
     }

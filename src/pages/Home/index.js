@@ -2,6 +2,7 @@ import React from "react";
 import { END } from "redux-saga";
 import PropTypes from "prop-types";
 import { Creators as Actions } from "store/ducks/home";
+import { Creators as ActionsSearch } from "store/ducks/search";
 import { wrapper } from "store";
 
 import HomeContainer from "containers/Home";
@@ -16,13 +17,16 @@ const HomePage = ({ products, aside, actualPage, totalPerPage, totalItems, total
 
 export const getServerSideProps = wrapper.getServerSideProps(async ({ store, query }) => {
   const id = parseInt(query?.gamePage, 10);
+  const term = query?.search;
   store.dispatch(Actions.requestHome(id, 12));
+  store.dispatch(ActionsSearch.requestSearch(term));
   store.dispatch(END);
   await store.sagaTask.toPromise();
   const { home: homeData } = store.getState();
+  const { search: searchData } = store.getState();
   return {
     props: {
-      products: homeData.products,
+      products: typeof term === "undefined" ? homeData.products : searchData.products,
       aside: homeData.aside,
       actualPage: homeData.actualPage,
       totalPerPage: homeData.totalPerPage,

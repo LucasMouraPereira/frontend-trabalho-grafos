@@ -1,17 +1,16 @@
 /* eslint-disable camelcase */
 import React from "react";
-
 import PropTypes from "prop-types";
 import Search from "components/core/Search";
 import Card from "components/core/Card";
 
-import Aside from "./Aside";
+// import Aside from "./Aside";
 
 import * as S from "./styled";
 
 const Home = ({ products, aside }) => (
   <S.Container>
-    <Aside price={aside.price} sort={aside.sort} system={aside.system} genre={aside.genre} />
+    {/* <Aside price={aside.price} sort={aside.sort} system={aside.system} genre={aside.genre} /> */}
     <S.WrapperBody>
       <Search handleSubmit={() => ({})} />
       <S.GridCards>
