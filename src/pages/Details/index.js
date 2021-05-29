@@ -16,7 +16,7 @@ const DetailsPage = ({ product, details }) => (
       mode={product.mode}
       developer={product.developer}
       currentPrice={product.currentPrice}
-      systemRequirenment={product.system_requirenment}
+      systemRequirement={product.system_requirement}
       banner={details.banner}
     />
   </>
@@ -51,7 +51,7 @@ DetailsPage.propTypes = {
     mode: PropTypes.string.isRequired,
     developer: PropTypes.string.isRequired,
     currentPrice: PropTypes.string.isRequired,
-    system_requirenment: PropTypes.arrayOf(
+    system_requirement: PropTypes.arrayOf(
       PropTypes.shape({
         id: PropTypes.number,
         name: PropTypes.string,

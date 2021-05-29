@@ -2,8 +2,6 @@ import React from "react";
 import Form from "components/core/Form";
 import PropTypes from "prop-types";
 
-
-
 import * as S from "./styled";
 
 const SignUp = ({ formSignUp }) => (

@@ -23,7 +23,7 @@ const Form = ({ title, formData, buttonData }) => {
   };
 
   const InitialStateSignUp = {
-    name: "",
+    account: "",
     email: "",
     password: "",
     confirmPassword: "",
@@ -43,7 +43,7 @@ const Form = ({ title, formData, buttonData }) => {
       }}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
+        
           setSubmitting(false);
         }, 400);
       }}
@@ -72,7 +72,7 @@ const Form = ({ title, formData, buttonData }) => {
             </S.WrapperInput>
           ))}
           {errors.password && touched.password && errors.password}
-          <Button type="submit" disabled={isSubmitting} text={buttonData.text}/>
+          <Button type="submit" disabled={isSubmitting} text={buttonData.text} />
         </S.Form>
       )}
     </Formik>

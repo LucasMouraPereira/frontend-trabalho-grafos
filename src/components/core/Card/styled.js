@@ -5,7 +5,9 @@ export const WrapperCard = styled.div`
   max-width: 293px;
   background-color: var(--color-white-1);
   border-radius: 3px;
-  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 `;
 
 export const WrapperImage = styled.div`

@@ -4,10 +4,11 @@ import { useRouter } from "next/router";
 import { DETAILS } from "utils/constants/urls";
 import Button from "components/core/Button";
 import IconWish from "components/core/IconWish";
+import IconShoppingCart from "components/core/IconShoppingCart";
 
 import * as S from "./styled";
 
-const Card = ({ id, image, title, company, price }) => {
+const Card = ({ id, image, title, company, price, addToCart }) => {
   const router = useRouter();
   const setIdGame = (idGame) => {
     const href = `${DETAILS}/${idGame}`;
@@ -28,6 +29,22 @@ const Card = ({ id, image, title, company, price }) => {
           <S.ContentSpan>
             <span>{`R$ ${price.replace(".", ",")}`}</span>
           </S.ContentSpan>
+          <div 
+            role="presentation" 
+            onClick={() => 
+              addToCart( 
+                {
+                  "id": id,
+                  "title": title,
+                  "company": company,
+                  "image": image, 
+                  "price": price
+                }
+              )
+            }
+          >
+            <IconShoppingCart />
+          </div>
         </S.WrapperBuy>
         <Button onClick={() => setIdGame(id)} text="See More" />
       </S.WrapperText>
@@ -41,6 +58,7 @@ Card.propTypes = {
   title: PropTypes.string.isRequired,
   company: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
+  addToCart: PropTypes.func.isRequired,
 };
 
 export default Card;

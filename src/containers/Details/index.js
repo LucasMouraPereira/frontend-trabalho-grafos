@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import DetailsCard from "components/core/DetailsCard";
+import BigCard from "components/core/BigCard";
+import SystemDetails from "components/core/SystemDetails";
 
 import * as S from "./styled";
 
@@ -12,13 +14,33 @@ const Details = ({
   categories,
   mode,
   developer,
-  currentPrice,
-  systemRequirenment,
-  banner
+  systemRequirement,
+  banner,
 }) => (
-  <S.WrapperDetails bg={banner}>
-    <DetailsCard title={title} description={description} price={price} />
-  </S.WrapperDetails>
+  <>
+    <S.WrapperDetails bg={banner}>
+      <DetailsCard title={title} description={description} price={price} />
+    </S.WrapperDetails>
+    <S.WrapperDetailsBigCard>
+      <BigCard
+        image={imageUrl}
+        description={description}
+        developer={developer}
+        categories={categories}
+        mode={mode}
+      />
+    </S.WrapperDetailsBigCard>
+    <S.ContainerSystem>
+      <SystemDetails
+        name={systemRequirement.name}
+        system={systemRequirement.operational_system}
+        storageMemory={systemRequirement.storage}
+        processor={systemRequirement.processor}
+        memory={systemRequirement.memory}
+        videoBoard={systemRequirement.video_board}
+      />
+    </S.ContainerSystem>
+  </>
 );
 
 Details.propTypes = {
@@ -34,8 +56,7 @@ Details.propTypes = {
   ).isRequired,
   mode: PropTypes.string.isRequired,
   developer: PropTypes.string.isRequired,
-  currentPrice: PropTypes.string.isRequired,
-  systemRequirenment: PropTypes.arrayOf(
+  systemRequirement: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number,
       name: PropTypes.string,

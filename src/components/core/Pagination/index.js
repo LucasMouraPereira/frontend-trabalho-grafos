@@ -16,16 +16,17 @@ const Pagination = ({ limit, total}) => {
   const pages = Math.ceil(total / limit);
   const first = Math.max(current - MAX_LEFT, 1);
 
-  const onPageChange = (page) => {
+  const onPageChange = (page, e) => {
     const href = `${HOME}/${page}`
     setOffset((page - 1) * limit);
-    router.push(href);
+    e.preventDefault()
+    router.push(href, href, { shallow: true });
   };
 
   return (
     <S.Pagination>
       <S.SectionButton>
-        <button type="button" onClick={() => onPageChange(current - 1)} disabled={current === 1}>
+        <button type="button" onClick={(e) => onPageChange(current - 1, e)} disabled={current === 1}>
           <ArrowBack />
         </button>
       </S.SectionButton>
@@ -35,7 +36,7 @@ const Pagination = ({ limit, total}) => {
           <S.Items key={page}>
             <button
               type="button"
-              onClick={() => onPageChange(page)}
+              onClick={(e) => onPageChange(page, e)}
               className={page === current ? "pagination__item--active" : null}
             >
               {page}
@@ -45,7 +46,7 @@ const Pagination = ({ limit, total}) => {
       <S.SectionButton>
         <button
           type="button"
-          onClick={() => onPageChange(current + 1)}
+          onClick={(e) => onPageChange(current + 1, e)}
           disabled={current === pages}
         >
           <ArrowForward />

@@ -1,4 +1,5 @@
 import React, { useState, memo } from "react";
+import { useSelector } from "react-redux";
 import { header } from "utils/data/header-mock.json";
 import { tabs, signIn, signUp } from "utils/data/forms-mock.json";
 import Link from "next/link";
@@ -15,9 +16,11 @@ import * as S from "./styled";
 
 const Header = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
+  const { cart } = useSelector(state => state);
   const styledLogo = {
     width: "146px",
   };
+
   return (
     <>
       <S.HeaderContainer>
@@ -31,7 +34,7 @@ const Header = () => {
             <Menu menu={header.pages} />
           </S.Right>
           <S.Left>
-            <IconCart />
+            <IconCart lengthProductsInCart={typeof cart?.productsInCar === "undefined" ? 0 :  cart?.productsInCar.length} />
             <Button onClick={() => setIsOpenModal(!isOpenModal)} text={header.button.name} />
           </S.Left>
         </S.WrapperHeader>

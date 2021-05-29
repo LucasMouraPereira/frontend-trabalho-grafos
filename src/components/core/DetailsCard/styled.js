@@ -8,6 +8,7 @@ export const WrapperDetailsCard = styled.div`
   flex-direction: row;
   justify-content: space-between;
   padding: 35px 46px 46px;
+  margin-top: 130px;
 `;
 
 export const WrapperText = styled.div`
