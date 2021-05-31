@@ -1,19 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import { useRouter } from "next/router";
 import { DETAILS } from "utils/constants/urls";
 import Button from "components/core/Button";
+import { CartContext } from "contexts/CartContext";
 import IconWish from "components/core/IconWish";
 import IconShoppingCart from "components/core/IconShoppingCart";
 
 import * as S from "./styled";
 
-const Card = ({ id, image, title, company, price, addToCart }) => {
+const Card = ({ id, image, title, company, price }) => {
+  const { addToCart, isAuth } = useContext(CartContext);
   const router = useRouter();
   const setIdGame = (idGame) => {
     const href = `${DETAILS}/${idGame}`;
     router.push(href);
   };
+
   return (
     <S.WrapperCard>
       <S.WrapperImage>
@@ -29,22 +32,22 @@ const Card = ({ id, image, title, company, price, addToCart }) => {
           <S.ContentSpan>
             <span>{`R$ ${price.replace(".", ",")}`}</span>
           </S.ContentSpan>
-          <div 
-            role="presentation" 
-            onClick={() => 
-              addToCart( 
-                {
+          {typeof isAuth !== "undefined" && (
+            <div
+              role="presentation"
+              onClick={() =>
+                addToCart({
                   "id": id,
                   "title": title,
                   "company": company,
-                  "image": image, 
-                  "price": price
-                }
-              )
-            }
-          >
-            <IconShoppingCart />
-          </div>
+                  "image": image,
+                  "price": price,
+                })
+              }
+            >
+              <IconShoppingCart />
+            </div>
+          )}
         </S.WrapperBuy>
         <Button onClick={() => setIdGame(id)} text="See More" />
       </S.WrapperText>
@@ -58,7 +61,6 @@ Card.propTypes = {
   title: PropTypes.string.isRequired,
   company: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
-  addToCart: PropTypes.func.isRequired,
 };
 
 export default Card;

@@ -1,13 +1,15 @@
-import React, { useState, memo } from "react";
-import { useSelector } from "react-redux";
+import React, { memo, useContext} from "react";
 import { header } from "utils/data/header-mock.json";
 import { tabs, signIn, signUp } from "utils/data/forms-mock.json";
 import Link from "next/link";
-import { HOME } from "utils/constants/urls";
+import { HOME, CART } from "utils/constants/urls";
+import { CartContext } from "contexts/CartContext";
+import { AuthContext } from "contexts/AuthContext"; 
 
 import Logo from "components/core/Logo";
 import Button from "components/core/Button";
 import IconCart from "components/core/IconCart";
+import UsersSection from "components/core/UsersSection";
 import Modal from "components/core/Modal";
 
 import Menu from "./Menu";
@@ -15,8 +17,9 @@ import Menu from "./Menu";
 import * as S from "./styled";
 
 const Header = () => {
-  const [isOpenModal, setIsOpenModal] = useState(false);
-  const { cart } = useSelector(state => state);
+  const { lengthCard, isAuth } = useContext(CartContext);
+  const { setIsOpenModal, isOpenModal } = useContext(AuthContext);
+
   const styledLogo = {
     width: "146px",
   };
@@ -34,8 +37,16 @@ const Header = () => {
             <Menu menu={header.pages} />
           </S.Right>
           <S.Left>
-            <IconCart lengthProductsInCart={typeof cart?.productsInCar === "undefined" ? 0 :  cart?.productsInCar.length} />
+          <Link href={CART} as={CART} passHref>
+            <a>
+              <IconCart lengthProductsInCart={typeof lengthCard === "undefined" ? 0 : lengthCard} />
+            </a>
+          </Link>
+          {typeof isAuth === "undefined" ? 
             <Button onClick={() => setIsOpenModal(!isOpenModal)} text={header.button.name} />
+            : 
+            <UsersSection />
+          }
           </S.Left>
         </S.WrapperHeader>
       </S.HeaderContainer>

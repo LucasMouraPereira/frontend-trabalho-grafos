@@ -8,6 +8,7 @@ import DetailsContainer from "containers/Details";
 const DetailsPage = ({ product, details }) => (
   <>
     <DetailsContainer 
+      id={product.id}
       title={product.name}
       description={product.description}
       imageUrl={product.image_url}
@@ -38,6 +39,7 @@ export const getServerSideProps = wrapper.getServerSideProps(async ({ store, que
 
 DetailsPage.propTypes = {
   product: PropTypes.shape({
+    id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     image_url: PropTypes.string.isRequired,

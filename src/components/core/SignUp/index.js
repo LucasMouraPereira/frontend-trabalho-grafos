@@ -1,4 +1,5 @@
 import React from "react";
+
 import Form from "components/core/Form";
 import PropTypes from "prop-types";
 
@@ -7,7 +8,7 @@ import * as S from "./styled";
 const SignUp = ({ formSignUp }) => (
   <S.WrapperSignUp>
     <S.FormSignUp>
-    <S.WrapperTitle>
+      <S.WrapperTitle>
         <S.Line />
         <h3>{formSignUp.title}</h3>
       </S.WrapperTitle>

@@ -34,6 +34,7 @@ export default class MyDocument extends Document {
         <Head>
           {this.props.styleTags}
           <link rel="icon" href="" />
+          <link rel="stylesheet" type="text/css" href="/nprogress.css" />
           <script type="text/javascript" defer src="" />
         </Head>
         <body>

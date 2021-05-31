@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const WrapperCard = styled.div`
   width: 100%;
   max-width: 293px;
+  height: 308px;
   background-color: var(--color-white-1);
   border-radius: 3px;
   display: flex;

@@ -1,7 +1,5 @@
 /* eslint-disable camelcase */
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import { Creators as ActionsCart } from "store/ducks/cart";
 import PropTypes from "prop-types";
 import { useRouter } from "next/router";
 import Search from "components/core/Search";
@@ -12,9 +10,7 @@ import { HOME, SEARCH } from "utils/constants/urls";
 import * as S from "./styled";
 
 const Home = ({ products }) => {
-  const dispatch = useDispatch();
   const [params, setParams] = useState("");
-  const [cart, setCart] = useState([]);
   const router = useRouter();
   const onSearchGames = (event) => {
     const href = `${HOME}/1${SEARCH}${params}`;
@@ -31,13 +27,6 @@ const Home = ({ products }) => {
     event.preventDefault();
   };
 
-  const cartTotal = cart?.reduce((total, { price = 0.0 }) => total + parseFloat(price, 10), 0.0);
-  const addToCart = (item) => {
-    setCart((currentCart) => [...currentCart, item]);
-    dispatch(ActionsCart.requestCart(cart, cartTotal));
-  };
-  // const amountOfItems = (id) => cart.filter((item) => item.id === id).length;
-
   return (
     <S.Container>
       <S.WrapperBody>
@@ -51,7 +40,6 @@ const Home = ({ products }) => {
                 title={name}
                 company={developer}
                 price={price}
-                addToCart={addToCart}
               />
             </div>
           ))}

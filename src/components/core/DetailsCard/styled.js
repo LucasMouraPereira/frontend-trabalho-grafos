@@ -37,14 +37,21 @@ export const Info = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 90px;
+  max-width: 130px;
+  color: #F231A5;
   span {
     margin-left: 8px;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    color: #F231A5;
   }
+`;
+
+export const WrapperCartBuy = styled.div`
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  max-width: 130px;
 `;
 
 export const ContentSpan = styled.div`
@@ -52,7 +59,7 @@ export const ContentSpan = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 78px;
+  max-width: 110px;
   hight: 22px;
   background: #3cd3c1;
   border-radius: 2px;
@@ -63,7 +70,6 @@ export const ContentSpan = styled.div`
     display: flex;
     align-items: center;
     text-align: center;
-
     color: #ffffff;
   }
 `;

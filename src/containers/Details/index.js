@@ -7,6 +7,7 @@ import SystemDetails from "components/core/SystemDetails";
 import * as S from "./styled";
 
 const Details = ({
+  id,
   title,
   description,
   imageUrl,
@@ -19,7 +20,7 @@ const Details = ({
 }) => (
   <>
     <S.WrapperDetails bg={banner}>
-      <DetailsCard title={title} description={description} price={price} />
+      <DetailsCard id={id} title={title} company={developer} image={imageUrl} description={description} price={price} />
     </S.WrapperDetails>
     <S.WrapperDetailsBigCard>
       <BigCard
@@ -44,6 +45,7 @@ const Details = ({
 );
 
 Details.propTypes = {
+  id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,

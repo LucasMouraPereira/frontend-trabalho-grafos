@@ -1,16 +1,18 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable no-alert */
-import React from "react";
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import { Formik } from "formik";
 import Account from "utils/static/svg/account.svg";
 import Email from "utils/static/svg/mail.svg";
 import Lock from "utils/static/svg/lock.svg";
 import Button from "components/core/Button";
+import { AuthContext } from "contexts/AuthContext";
 
 import * as S from "./styled";
 
 const Form = ({ title, formData, buttonData }) => {
+  const { login } = useContext(AuthContext);
   const handleIcon = {
     account: <Account />,
     email: <Email />,
@@ -43,9 +45,21 @@ const Form = ({ title, formData, buttonData }) => {
       }}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
-        
-          setSubmitting(false);
-        }, 400);
+            if(title === "Sign in") {
+              login(values.email, values.password);
+            }
+            if(title === "Sign up") {
+              const { data: token } = routes.user.signup.request({
+                name: values.name,
+                email: values.email,
+                password: values.password,
+              });
+              // authenticate(token.token);
+              setSubmitting(false);
+              // router.push("/game/1");
+            }
+          
+        }, 500);
       }}
     >
       {({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting }) => (
