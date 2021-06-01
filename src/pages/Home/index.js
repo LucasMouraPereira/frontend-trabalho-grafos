@@ -1,7 +1,6 @@
 import React from "react";
 import { END } from "redux-saga";
 import PropTypes from "prop-types";
-import { getCookie } from "utils/helpers/cookies";
 import { Creators as Actions } from "store/ducks/home";
 import { Creators as ActionsSearch } from "store/ducks/search";
 import { wrapper } from "store";
@@ -16,7 +15,7 @@ const HomePage = ({ products, actualPage, totalPerPage, totalItems, totalPages }
     </>
   );
 
-export const getServerSideProps = wrapper.getServerSideProps(async ({ req, store, query }) => {
+export const getServerSideProps = wrapper.getServerSideProps(async ({ store, query }) => {
   const id = parseInt(query?.gamePage, 10);
   const term = query?.search;
   store.dispatch(Actions.requestHome(id, 12));
@@ -25,7 +24,6 @@ export const getServerSideProps = wrapper.getServerSideProps(async ({ req, store
   await store.sagaTask.toPromise();
   const { home: homeData } = store.getState();
   const { search: searchData } = store.getState();
-  //const cookies = await getCookie(req?.headers?.cookie);
 
   return {
     props: {

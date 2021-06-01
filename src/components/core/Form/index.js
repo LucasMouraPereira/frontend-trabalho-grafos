@@ -48,17 +48,7 @@ const Form = ({ title, formData, buttonData }) => {
             if(title === "Sign in") {
               login(values.email, values.password);
             }
-            if(title === "Sign up") {
-              const { data: token } = routes.user.signup.request({
-                name: values.name,
-                email: values.email,
-                password: values.password,
-              });
-              // authenticate(token.token);
-              setSubmitting(false);
-              // router.push("/game/1");
-            }
-          
+            setSubmitting(false);
         }, 500);
       }}
     >

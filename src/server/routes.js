@@ -9,3 +9,5 @@ module.exports = Routes()
   .add({ name: "Details", pattern: `${DETAILS}${DETAILS_SLUG}`, page: "Details" })
   // cart 
   .add({ name: "Cart", pattern: CART, page: "Cart" })
+  //  payment
+  .add({ name: "Payment", pattern: `${CART}/payment`, page: "Payment" })
