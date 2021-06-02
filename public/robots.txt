@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /games/1*
+
+Sitemap: https://frontend-grafos.vercel.app/games/1
