@@ -1,12 +1,16 @@
 import React, { useContext } from "react";
 import { Formik } from "formik";
+import { useRouter } from "next/router";
+import Cookies from "js-cookie";
 import valid from "card-validator";
 import Button from "components/core/Button";
 import { OrderContext } from "contexts/OrderContext";
+import { CART, PAYMENT} from "utils/constants/urls";
 
 import * as S from "./styled";
 
 const Payment = () => {
+  const router = useRouter();
   const { handleSuccessPayment } = useContext(OrderContext);
   const InitialState = {
     creditCard: "",
@@ -31,8 +35,12 @@ const Payment = () => {
             return errors;
           }}
           onSubmit={(values, { setSubmitting }) => {
+            handleSuccessPayment(values.creditCard);
             setTimeout(() => {
-              handleSuccessPayment(values.creditCard);
+              Cookies.remove("CART_TOTAL");
+              Cookies.remove("CART_TO_PRODUCTS");
+              Cookies.remove("LENGTH_CARD");
+              router.push(`${CART}${PAYMENT}`);
               setSubmitting(false);
             }, 500);
           }}

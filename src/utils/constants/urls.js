@@ -4,6 +4,7 @@ const DETAILS = "/details";
 const DETAILS_SLUG = "/:details";
 const SEARCH = "?search=";
 const CART = "/cart";
+const PAYMENT = "/payment";
 
 module.exports = {
   HOME,
@@ -11,5 +12,6 @@ module.exports = {
   DETAILS,
   DETAILS_SLUG,
   SEARCH,
-  CART
+  CART,
+  PAYMENT
 };

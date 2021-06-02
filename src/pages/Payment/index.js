@@ -1,5 +1,5 @@
 import React from "react";
-import PaymentContainer from "containers/Cart";
+import PaymentContainer from "containers/PaymentContainer";
 
 const PaymentPage = () => <PaymentContainer />;
 
