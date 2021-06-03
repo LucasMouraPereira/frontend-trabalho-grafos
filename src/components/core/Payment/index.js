@@ -20,7 +20,7 @@ const Payment = () => {
     <S.ContentPayment>
       <S.WrapperPayment>
         <h3>
-          Payment
+          Pagamento
           <div />
         </h3>
         <Formik
@@ -48,19 +48,19 @@ const Payment = () => {
           {({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting }) => (
             <form onSubmit={handleSubmit}>
               <S.Input>
-                <S.Label htmlFor="creditCard">Credit Card</S.Label>
+                <S.Label htmlFor="creditCard">Cartão de crédito</S.Label>
                 <input
                   type="text"
                   name="creditCard"
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.creditCard}
-                  placeholder="credit card number"
+                  placeholder="número"
                 />
               </S.Input>
               {errors.creditCard && touched.creditCard}
               <S.WrapperButton>
-                <Button type="submit" disabled={isSubmitting} text="Buy now" />
+                <Button type="submit" disabled={isSubmitting} text="Comprar" />
               </S.WrapperButton>
             </form>
           )}

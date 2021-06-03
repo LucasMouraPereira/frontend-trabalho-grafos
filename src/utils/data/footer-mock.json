@@ -4,10 +4,10 @@
     "title": "Story Games",
     "section": [
       {
-        "title": "contact",
+        "title": "Contato",
         "info": [
           {
-            "text": "suporte@storygames.com"
+            "text": "suporte@storegames.com"
           }, 
           {
             "text":"+55 21 33283719"
@@ -15,7 +15,7 @@
         ]
       },
       {
-        "title": "follow us",
+        "title": "Siga-nos",
         "info": [
           {
             "text": "Instagram",
@@ -39,34 +39,24 @@
         "title": "links",
         "info": [
           {
-            "text": "Home",
-            "link": "/"
+            "text": "Loja",
+            "link": "/games/1"
           },
           {
-            "text": "Store",
-            "link": "/loja"
-          },
-          {
-            "text": "Discover",
+            "text": "Lista de desejos",
             "link": "/"
           }
         ]
       },
       {
-        "title": "Location",
+        "title": "Onde nos encontrar",
         "info":[
           {
-            "text": "Rua 7 de Maio"
-          },
-          {
-            "text": "527  - 89020330"
-          },
-          {
-            "text": "Rio de Janeiro, Brasil"
+            "text": "Belo Horizonte, Brasil"
           }
         ]
       }
     ],
-    "pharse": "Story Games 20201 © Todos os Direitos Reservados"
+    "pharse": "Store Games 20201 © Todos os Direitos Reservados"
   }
 }

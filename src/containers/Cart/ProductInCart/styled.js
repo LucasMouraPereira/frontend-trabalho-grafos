@@ -46,6 +46,9 @@ export const WrapperImage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  img {
+    width: 210px;
+  }
 `;
 
 export const WrapperText = styled.div`

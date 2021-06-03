@@ -5,7 +5,7 @@ const next = require("next");
 const routes = require("./routes");
 const RedirectsMiddleware = require("./middlewares/redirects");
 
-const dev = process.env.NODE_ENV === "production";
+const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handler = routes.getRequestHandler(app);
 

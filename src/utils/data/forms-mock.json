@@ -26,7 +26,7 @@
       }
     ],
     "button": {
-      "text": "Sign in now"
+      "text": "Logar"
     }
   },
   "signUp": {
@@ -35,7 +35,7 @@
       {
         "type": "account",
         "id": "account",
-        "field": "Name"
+        "field": "Nome"
       },
       {
         "type": "email",
@@ -45,16 +45,16 @@
       {
         "type": "password",
         "id": "password",
-        "field": "Password"
+        "field": "Senha"
       },
       {
         "type": "password",
         "id": "confirmPassword",
-        "field": "Confirm password"
+        "field": "Confirmar senha"
       }
     ],
     "button": {
-      "text": "Sign up now"
+      "text": "Cadastrar"
     }
   }
 }

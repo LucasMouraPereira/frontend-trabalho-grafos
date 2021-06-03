@@ -60,7 +60,7 @@ const Modal = ({
               <Logo 
                 color="#000000" 
                 icon="/images/global/png/Icon.png"
-                title="Story Games" 
+                title="Store Games" 
                 style={styledLogo} 
               />
               {isActiveTabs === 0 ? <SignIn formSignIn={formSignIn} /> : <SignUp formSignUp={formSignUp} />}

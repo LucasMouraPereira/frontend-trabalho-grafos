@@ -6,11 +6,12 @@ export const Container = styled.div`
   margin: 21px;
   display: flex;
   padding: 10px 16px;
+  justify-content: center;
 `;
 
 export const WrapperForm = styled.form`
   flex: 1;
-  max-width: 293px;
+  max-width: 75%;
   display: flex;
   align-items: center;
   border-radius: 2px;
@@ -30,7 +31,8 @@ export const InputStyled = styled.input`
   font-size: 16px;
   padding: 10px;
   background-color: #2E2F42;
-  color: var(--color-white-1)
+  color: var(--color-white-1);
+  border-radius: 4px 0 0 4px;
 `;
 
 export const Button = styled.button`
@@ -41,4 +43,5 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   background-color: #2E2F42;
+  border-radius: 0 4px 4px 0;
 `;

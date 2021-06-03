@@ -1,10 +1,12 @@
 import { createContext, useState } from "react";
+import { useRouter } from "next/router";
 import PropTypes from "prop-types";
 import Cookies from "js-cookie";
 
 export const CartContext = createContext({});
 
 export const CartProvider = ({ children }) => {
+  const router = useRouter();
   const [cart, setCart] = useState([]);
   const cartTotal = cart?.reduce((total, { price = 0.0 }) => total + parseFloat(price, 10), 0.0);
   const amountOfItems = (id) => cart.filter((item) => item.id === id).length;
@@ -25,7 +27,6 @@ export const CartProvider = ({ children }) => {
   const removeFromCart = (item) => {
     setCart((currentCart) => {
       const indexOfItemToRemove = currentCart.findIndex((cartItem) => cartItem.id === item.id);
-
       if (indexOfItemToRemove === -1) {
         return currentCart;
       }
@@ -35,6 +36,7 @@ export const CartProvider = ({ children }) => {
         ...currentCart.slice(indexOfItemToRemove + 1),
       ];
     });
+    router.push("/cart");
   };
   return (
     <CartContext.Provider value={{ cart, cartTotal, cartsInfo, lengthCard, total, addToCart, amountOfItems, removeFromCart, isAuth }}>

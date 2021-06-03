@@ -7,18 +7,17 @@ import * as S from "./styled";
 
 const PaymentContainer = () => (
   <S.WrapperPayment>
-    <h4>Your purchase was successful</h4>
+    <h4>Recebemos seu pedido</h4>
     <S.WrapperIcon>
       <div />
       <FinallyIcon />
       <div />
     </S.WrapperIcon>
     <p>
-      Wait for your payment details by email. Your game is now available for download on the Story
-      Games platform. Enjoy!
+      Sua chave será enviada por email assim que confirmarmos seu pagamento.
     </p>
     <Link href={`${HOME}/1`} as={`${HOME}/1`} passHref>
-      <S.Redirect>Go back shopping</S.Redirect>
+      <S.Redirect>Voltar para as compras</S.Redirect>
     </Link>
   </S.WrapperPayment>
 );

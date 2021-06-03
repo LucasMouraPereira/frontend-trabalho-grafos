@@ -11,7 +11,7 @@ const ProductInCart = () => {
     <S.ContainerProducts>
       <h2>
         <div />
-        My Cart
+        Meu carrinho
       </h2>
       <div>
         {cartsInfo.map((cart) => (

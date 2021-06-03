@@ -1,15 +1,15 @@
 {
   "header": {
     "icon": "/images/global/png/Icon.png",
-    "title": "Story Games",
+    "title": "Store Games",
     "pages": [
       {
-        "name": "Home",
+        "name": "Loja",
         "link": "/games/1",
         "isHomeActive": true
       },
       {
-        "name": "Wishlist",
+        "name": "Lista de desejos",
         "link": "/wishlist",
         "isHomeActive": true
       }
@@ -18,7 +18,7 @@
       "initialState": 0
     },
     "button": {
-      "name": "Sign in",
+      "name": "Login",
       "state": false
     }
   }

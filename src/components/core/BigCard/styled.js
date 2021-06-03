@@ -26,6 +26,9 @@ export const WrapperBigCard = styled.div`
     line-height: 30px;
     color: #030517;
   }
+  img {
+    width: 210px;
+  }
 `;
 
 export const WrapperDescription = styled.div`

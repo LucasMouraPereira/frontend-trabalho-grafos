@@ -49,7 +49,7 @@ const Card = ({ id, image, title, company, price }) => {
             </div>
           )}
         </S.WrapperBuy>
-        <Button onClick={() => setIdGame(id)} text="See More" />
+        <Button onClick={() => setIdGame(id)} text="Veja mais" />
       </S.WrapperText>
     </S.WrapperCard>
   );

@@ -40,7 +40,7 @@ const DetailsCard = ({ id, title, description, price, company, image }) => {
         </S.WrapperCartBuy>
         <S.WrapperIcon>
           <IconWish />
-          <span>Wishlist</span>
+          <span>Lista de desejos</span>
         </S.WrapperIcon>
       </S.Info>
     </S.WrapperDetailsCard>

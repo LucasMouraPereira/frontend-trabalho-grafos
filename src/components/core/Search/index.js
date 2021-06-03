@@ -14,7 +14,7 @@ const Search = ({ handleSubmit, params, setParams }) => (
         <S.InputStyled 
           value={params} 
           onChange={(event) => setParams(event.target.value)}
-          placeholder="Search for"
+          placeholder="Procure seu jogo"
         />
         <S.Button type="submit">
           <SearchIcon />
